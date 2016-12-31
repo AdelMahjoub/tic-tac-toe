@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: -webkit-radial-gradient(center,circle, white, rgba(0,0,0,0.5));
+    background: -moz-radial-gradient(center,circle, white, rgba(0,0,0,0.5));
+    background: -o-radial-gradient(center,circle, white, rgba(0,0,0,0.5));
+    background: -ms-radial-gradient(center,circle, white, rgba(0,0,0,0.5));
+    background: radial-gradient(center,circle, white, rgba(0,0,0,0.5));
+}
+.banner{
+    height: 36px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 10px auto 10px auto;
+    background: -webkit-radial-gradient(top,circle, white, rgba(0,0,0,0.1));
+    background: -moz-radial-gradient(top,circle, white, rgba(0,0,0,0.1));
+    background: -o-radial-gradient(top,circle, white, rgba(0,0,0,0.1));
+    background: -ms-radial-gradient(top,circle, white, rgba(0,0,0,0.1));
+    background: radial-gradient(top,circle, white, rgba(0,0,0,0.1));
+}
+.banner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#stage{
+    position: relative;
+    border: 1px solid gray;
+    background:-webkit-repeating-linear-gradient(-45deg,rgba(0,0,0,0.5) ,rgba(255,255,255,0.5) 10px);
+    background:-moz-repeating-linear-gradient(-45deg,rgba(0,0,0,0.5) ,rgba(255,255,255,0.5) 10px);
+    background:-o-repeating-linear-gradient(-45deg,rgba(0,0,0,0.5) ,rgba(255,255,255,0.5) 10px);
+    background:-ms-repeating-linear-gradient(-45deg,rgba(0,0,0,0.5) ,rgba(255,255,255,0.5) 10px);
+    background:repeating-linear-gradient(-45deg,rgba(0,0,0,0.5) ,rgba(255,255,255,0.5) 10px);
+    margin: 0 auto;
+}
+div[data-welcome]{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: top 0.5s ease-in;
+    -moz-transition: top 0.5s ease-in;
+    -o-transition: top 0.5s ease-in;
+    -ms-transition: top 0.5s ease-in;
+    transition: top 0.5s ease-in;
+    z-index: 1;
+}
+div[data-welcome] div{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: inherit;
+    margin:35% auto;
+}
+button{
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid black;
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-o-linear-gradient(top, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:linear-gradient(top, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+}
+button:active{
+    background:-webkit-linear-gradient(bottom, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-moz-linear-gradient(bottom, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-o-linear-gradient(bottom, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:-ms-linear-gradient(bottom, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+    background:linear-gradient(bottom, rgba(255,255,255,0.7), rgba(0,0,0,0.5));
+}
+.cell{
+    position: absolute;
+    background-color: white;
+    cursor: pointer;
+}
+.unclickable{
+    pointer-events: none;
+}
+.hidden{
+    display: none;
+}

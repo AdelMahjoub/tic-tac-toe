@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <title>tic tac toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div>
+                <span>score </span>
+                <span data-score></span>
+            </div>
+            <div>
+                <span>Moves</span>
+                <span data-round></span>
+            </div>
+            <div>
+                <span>time </span>
+                <span data-time>0</span>
+            </div>
+        </div>
+        <div id="stage">
+            <div data-welcome>
+                <div>
+                    <p>Welcome <br>Select your flag:</p>
+                    <button data-circle>Circle O</button>
+                    <button data-cross>Cross X</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner" data-info>
+            <div><span data-message></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
